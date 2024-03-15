@@ -28,9 +28,6 @@ const answersRoutes = require("./routes/answerRoute")
 // the Express application is able to automatically parse and extract the JSON data from the request body, making it accessible in your route handlers through req.body.
 app.use(express.json())
 
-app.get("/", (req, res) => {
-  res.send("Welcome");
-});
 
 // user route middleWare
 app.use("/api/users", userRoutes);
